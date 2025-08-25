@@ -1,17 +1,12 @@
 """
 Virtual Hand Controll Mouse 
 - Matches the 5 gestures exactly:
-  1) index open, middle open, thumb bent -> MOVE (yellow)
-  2) index open, middle open, thumb open -> STOP (white)
-  3) index open, middle bent, thumb open -> RIGHT CLICK (red)
-  4) index bent, middle open, thumb open -> LEFT CLICK (green)
-  5) index bent, middle bent, thumb bent -> SCREENSHOT (blue)
-
-Features:
-- Smoothing for cursor movement
-- Cooldowns for clicks and screenshot
-- Optional drag-and-drop (pinch-to-drag while rule#1 active)
-- Debug overlay with angles and thumb-index distance (toggle with 'd')
+  1) index open, middle open, thumb bent -> MOVE ARROW
+  2) index open, middle open, thumb open -> STOP MOVING ARROW
+  3) index open, middle bent, thumb open -> RIGHT CLICK 
+  4) index bent, middle open, thumb open -> LEFT CLICK
+  5) index bent, middle bent, thumb bent -> SCREENSHOT
+  6) index bent, middle bent, thumb open -> DOUBLE CLICK
 - Quit with 'q'
 """
 import cv2
